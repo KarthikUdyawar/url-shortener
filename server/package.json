@@ -1,6 +1,30 @@
 {
   "name": "server",
-  "version": "1.0.0",
+  "version": "1.0.0-alpha+1",
+  "description": "url-shortener server",
   "main": "index.js",
-  "license": "MIT"
+  "scripts": {
+    "start": "node dist/index.js",
+    "dev": "nodemon src/index.ts",
+    "build": "tsc -p ."
+  },
+  "repository": "https://github.com/KarthikUdyawar/url-shortener",
+  "author": "Karthik Udyawar",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.18.1",
+    "mongoose": "^6.4.0",
+    "nanoid": "^4.0.0"
+  },
+  "devDependencies": {
+    "@types/dotenv": "^8.2.0",
+    "@types/express": "^4.17.13",
+    "@types/mongoose": "^5.11.97",
+    "@types/node": "^18.0.0",
+    "@types/nodemon": "^1.19.1",
+    "dotenv": "^16.0.1",
+    "nodemon": "^2.0.16",
+    "ts-node": "^10.8.1",
+    "typescript": "^4.7.4"
+  }
 }
