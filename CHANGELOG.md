@@ -10,25 +10,17 @@ and this project adheres to [Semantic Versioning](http://semver.org/).
 Here we write upgrading notes for brands. It's a team effort to make them as straightforward as possible.
 
 ### Added
-- Added CreateShortUrl controller & router
-- Create ICreateReqBody and IErrorMessage interfaces
-- Added express json parser & urlencoded extended
+- Added RedirectShortUrl controller & route
+- Added IRequest, IReqParams & IReqBody interface
 
-### Changed 
-- Changed IShortUrl interface in Document type
-
-### Fixed
-- Downgrade nanoid & @types/nanoid because of some bugs in nanoid^4.0.0
-
-## [1.0.1-alpha] - 2022-06-19
+## [1.0.1-alpha.2] - 2022-06-19
 
 ### Added
+- [89ea302](https://github.com/KarthikUdyawar/url-shortener/commit/89ea302) - Add Create short utl utl API
 - [174b9bf](https://github.com/KarthikUdyawar/url-shortener/commit/174b9bf) - Added shortURL model
 - [b45bee5](https://github.com/KarthikUdyawar/url-shortener/commit/b45bee5) - Added router and controller 🎉
  
- ---
-
-## [1.0.0-beta] - 2022-06-19
+## [1.0.0-alpha.1] - 2022-06-19
 
 ### Added
 
