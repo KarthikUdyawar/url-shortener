@@ -9,14 +9,23 @@ and this project adheres to [Semantic Versioning](http://semver.org/).
 
 Here we write upgrading notes for brands. It's a team effort to make them as straightforward as possible.
 
+### Added
+- Create shortUrl schema
+- Added IShortUrl interfaces
+
+## [1.0.1-alpha] - 2022-06-19
 
 ### Added
-- Create first routers and controllers 🎉
-
+- [b45bee5](https://github.com/KarthikUdyawar/url-shortener/commit/b45bee5) - Added router and controller 🎉
+ 
+ ---
+ 
 ## [1.0.0-beta] - 2022-06-19
 
 ### Added
 
+- [f79f46a](https://github.com/KarthikUdyawar/url-shortener/commit/f79f46a) - Merge pull request #1 from KarthikUdyawar/add-license-1 
+- [a8d8d09](https://github.com/KarthikUdyawar/url-shortener/commit/a8d8d09) - (origin/add-license-1) Create LICENSE
 - [e307afa](https://github.com/KarthikUdyawar/url-shortener/commit/e307afa) - Start server and test API
 
 ## [1.0.0-alpha] - 2022-06-19
