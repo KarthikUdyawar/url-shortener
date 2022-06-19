@@ -7,19 +7,18 @@ and this project adheres to [Semantic Versioning](http://semver.org/).
 
 ## [Unreleased] - yyyy-mm-dd
 
-Here we write upgrading notes for brands. It's a team effort to make them as
-straightforward as possible.
+Here we write upgrading notes for brands. It's a team effort to make them as straightforward as possible.
 
 ### Added
 
-- Added required dependencies & devDependencies
-- Added tsconfig.json 
-- Added CHANGELOG.md
-- Added .gitignore
+- Install required dependencies
+- Added .eslintrc
+- Added .prettierrc
+- Added nodemon.json
 
 ## [1.0.0-alpha] - 2022-06-19
 
 ### Added
 
-- [144bac9](https://github.com/KarthikUdyawar/url-shortener/commit/144bac)
-  First Commit 🎉
+- [144bac9](https://github.com/KarthikUdyawar/url-shortener/commit/144bac) - First Commit 🎉
+- [f351ebb](https://github.com/KarthikUdyawar/url-shortener/commit/f351ebb) - Added dependencies
