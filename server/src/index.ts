@@ -1,15 +1,11 @@
 import Database from "./config/database";
 import config from "./config/env";
-import express, { Application, Request, Response } from "express";
+import express, { Application } from "express";
 import http from "http";
+import routers from "./api/routes/ShortURL.routes";
 
 // Boot express
 const app: Application = express();
-
-// API test
-app.use("/", (req: Request, res: Response) => {
-  res.status(200).send({ message: "API is running successfully" });
-});
 
 // Database connection
 Promise.resolve(new Database().conn())
@@ -25,3 +21,5 @@ Promise.resolve(new Database().conn())
   .catch((error) => {
     console.log("Connection Error: ", error);
   });
+
+app.use("/", routers);

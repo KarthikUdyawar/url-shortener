@@ -1,6 +1,6 @@
 {
   "name": "server",
-  "version": "1.0.0-beta",
+  "version": "1.0.1-alpha",
   "description": "url-shortener server",
   "main": "index.js",
   "scripts": {
