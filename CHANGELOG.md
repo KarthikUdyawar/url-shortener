@@ -9,18 +9,17 @@ and this project adheres to [Semantic Versioning](http://semver.org/).
 
 Here we write upgrading notes for brands. It's a team effort to make them as straightforward as possible.
 
-### Added
-- Added RedirectShortUrl controller & route
-- Added IRequest, IReqParams & IReqBody interface
 
-## [1.0.1-alpha.2] - 2022-06-19
+
+## [0.1.1-alpha.2] - 2022-06-19
 
 ### Added
-- [89ea302](https://github.com/KarthikUdyawar/url-shortener/commit/89ea302) - Add Create short utl utl API
+- [62725e4](https://github.com/KarthikUdyawar/url-shortener/commit/62725e4) - Added Redirect short URL API
+- [89ea302](https://github.com/KarthikUdyawar/url-shortener/commit/89ea302) - Added Create short utl utl API
 - [174b9bf](https://github.com/KarthikUdyawar/url-shortener/commit/174b9bf) - Added shortURL model
 - [b45bee5](https://github.com/KarthikUdyawar/url-shortener/commit/b45bee5) - Added router and controller 🎉
  
-## [1.0.0-alpha.1] - 2022-06-19
+## [0.1.0-alpha.1] - 2022-06-19
 
 ### Added
 
@@ -28,10 +27,10 @@ Here we write upgrading notes for brands. It's a team effort to make them as str
 - [a8d8d09](https://github.com/KarthikUdyawar/url-shortener/commit/a8d8d09) - (origin/add-license-1) Create LICENSE
 - [e307afa](https://github.com/KarthikUdyawar/url-shortener/commit/e307afa) - Start server and test API
 
-## [1.0.0-alpha] - 2022-06-19
+## [0.1.0-alpha] - 2022-06-19
 
 ### Added
 
 - [b1d5156](https://github.com/KarthikUdyawar/url-shortener/commit/b1d5156) - Added Eslint + Prettier + Nodemon configuration for Typescript
 - [f351ebb](https://github.com/KarthikUdyawar/url-shortener/commit/f351ebb) - Added dependencies
-- [144bac9](https://github.com/KarthikUdyawar/url-shortener/commit/144bac) - First Commit 🎉
+- [144bac9](https://github.com/KarthikUdyawar/url-shortener/commit/144bac9) - First Commit 🎉
