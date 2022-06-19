@@ -9,8 +9,13 @@ and this project adheres to [Semantic Versioning](http://semver.org/).
 
 Here we write upgrading notes for brands. It's a team effort to make them as straightforward as possible.
 
+### Fixed
+- Typo error slug -> short
+- Fixed warning Forbidden non-null assertion at shortUrl
+- Added a condition that short URL does not exist
+- id param inside the try block
 
-
+---
 ## [0.1.1-alpha.2] - 2022-06-19
 
 ### Added
@@ -19,6 +24,9 @@ Here we write upgrading notes for brands. It's a team effort to make them as str
 - [174b9bf](https://github.com/KarthikUdyawar/url-shortener/commit/174b9bf) - Added shortURL model
 - [b45bee5](https://github.com/KarthikUdyawar/url-shortener/commit/b45bee5) - Added router and controller 🎉
  
+### Changed
+- [9723a7e](https://github.com/KarthikUdyawar/url-shortener/commit/9723a7e) - Downgrade major versions
+
 ## [0.1.0-alpha.1] - 2022-06-19
 
 ### Added

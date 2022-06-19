@@ -6,17 +6,25 @@ import IRequest from "./interfaces/IRequest";
 import IReqParams from "./interfaces/IReqParams";
 
 const RedirectShortUrl = async (req: IRequest, res: Response) => {
-  const { id }: IReqParams = req.params;
   const errorMessage: IErrorMessage = { code: -1, message: "" };
 
   try {
-    const shortUrl: IShortUrl | null = await ShortUrls.findOne({ slug: id });
+    const { id }: IReqParams = req.params;
+
+    const shortUrl: IShortUrl | null = await ShortUrls.findOne({ short: id });
 
     const data = {
-      long: shortUrl!.long,
+      long: shortUrl?.long ?? null,
     };
 
-    return res.redirect(301, data.long);
+    if (data.long) {
+      return res.redirect(301, data.long);
+    } else {
+      errorMessage.code = 404;
+      errorMessage.message = `Could not find the long link for this short link ${id}`;
+
+      return res.json({ error: errorMessage });
+    }
   } catch (error) {
     if (error instanceof Error) {
       errorMessage.code = 500;
