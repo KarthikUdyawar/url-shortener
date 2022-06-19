@@ -7,6 +7,10 @@ import routers from "./api/routes/ShortURL.routes";
 // Boot express
 const app: Application = express();
 
+// Request middleware
+app.use(express.json());
+app.use(express.urlencoded({ extended: true }));
+
 // Database connection
 Promise.resolve(new Database().conn())
   .then(() => {

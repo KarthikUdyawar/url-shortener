@@ -1,5 +1,5 @@
 import { Schema, model } from "mongoose";
-import { IShortUrl } from "./interfaces/IShortUrl";
+import IShortUrl from "./interfaces/IShortUrl";
 
 const ShortUrlSchema = new Schema<IShortUrl>(
   {
