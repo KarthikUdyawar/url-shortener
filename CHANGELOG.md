@@ -9,6 +9,10 @@ and this project adheres to [Semantic Versioning](http://semver.org/).
 
 Here we write upgrading notes for brands. It's a team effort to make them as straightforward as possible.
 
+### Removed 
+- Deleted IErrorMessage interface
+- Remove useless imports and variables 
+
 ## [0.1.6-beta] - 2022-06-20
 ### Added
 - [7828a80](https://github.com/KarthikUdyawar/url-shortener/commit/7828a80) - Create IResponse.ts
@@ -18,6 +22,7 @@ Here we write upgrading notes for brands. It's a team effort to make them as str
 ### Deprecated
 - [c236c2b](https://github.com/KarthikUdyawar/url-shortener/commit/c236c2b) - IErrorMessage interface will be removed
 ### Removed
+- [a8e714a](https://github.com/KarthikUdyawar/url-shortener/commit/a8e714a) - Remove useless import and variable
 - [7c1fbba](https://github.com/KarthikUdyawar/url-shortener/commit/7c1fbba) - Delete ICreateReqBody interface
 ### Fixed
 - [836904e](https://github.com/KarthikUdyawar/url-shortener/commit/836904e) - Using IResponse & IMessage interfaces in response
