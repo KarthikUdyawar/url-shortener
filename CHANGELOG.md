@@ -15,6 +15,11 @@ Here we write upgrading notes for brands. It's a team effort to make them as str
 ### Deprecated 
 - Deprecate ICreateReqBody
 
+## [0.1.4-beta] - 2022-06-20
+
+### Fixed
+- [68dd928](https://github.com/KarthikUdyawar/url-shortener/commit/68dd928) - Use IReqBody instead of ICreateReqBody
+
 ## [0.1.3-beta] - 2022-06-20
 
 ### Fixed
