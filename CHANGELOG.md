@@ -9,14 +9,14 @@ and this project adheres to [Semantic Versioning](http://semver.org/).
 
 Here we write upgrading notes for brands. It's a team effort to make them as straightforward as possible.
 
-## [0.1.7-beta] - 2022-06-20
+## [0.1.6-beta] - 2022-06-20
 
 ### Removed
 - [68c3ac2](https://github.com/KarthikUdyawar/url-shortener/commit/68c3ac2) - Deleted IErrorMessage interface
 ### Fixed
 - [a641cbd](https://github.com/KarthikUdyawar/url-shortener/commit/a641cbd) - Updated RedirectShortUrl response system
 
-## [0.1.6-beta] - 2022-06-20
+## [0.1.5-beta] - 2022-06-20
 ### Added
 - [7828a80](https://github.com/KarthikUdyawar/url-shortener/commit/7828a80) - Create IResponse.ts
 - [876c368](https://github.com/KarthikUdyawar/url-shortener/commit/876c368) - Create IMessage.ts
@@ -30,14 +30,13 @@ Here we write upgrading notes for brands. It's a team effort to make them as str
 ### Fixed
 - [836904e](https://github.com/KarthikUdyawar/url-shortener/commit/836904e) - Using IResponse & IMessage interfaces in response
 
-## [0.1.5-beta] - 2022-06-20
-### Removed
-- [7c1fbba](https://github.com/KarthikUdyawar/url-shortener/commit/7c1fbba) - Delete ICreateReqBody interface
-
 ## [0.1.4-beta] - 2022-06-20
 
 ### Fixed
 - [68dd928](https://github.com/KarthikUdyawar/url-shortener/commit/68dd928) - Use IReqBody instead of ICreateReqBody
+
+### Removed
+- [7c1fbba](https://github.com/KarthikUdyawar/url-shortener/commit/7c1fbba) - Delete ICreateReqBody interface
 
 ## [0.1.3-beta] - 2022-06-20
 
