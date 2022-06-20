@@ -9,8 +9,12 @@ and this project adheres to [Semantic Versioning](http://semver.org/).
 
 Here we write upgrading notes for brands. It's a team effort to make them as straightforward as possible.
 
-### Fixed 
-- Improve response by adding IResponse interfaces
+## [0.1.7-beta] - 2022-06-20
+
+### Removed
+- [68c3ac2](https://github.com/KarthikUdyawar/url-shortener/commit/68c3ac2) - Deleted IErrorMessage interface
+### Fixed
+- [a641cbd](https://github.com/KarthikUdyawar/url-shortener/commit/a641cbd) - Updated RedirectShortUrl response system
 
 ## [0.1.6-beta] - 2022-06-20
 ### Added
