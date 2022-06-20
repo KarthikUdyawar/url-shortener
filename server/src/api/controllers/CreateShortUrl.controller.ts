@@ -1,14 +1,17 @@
 import { nanoid } from "nanoid";
 import { ShortUrls } from "../models/shortURL.model";
-import ICreateReqBody from "./interfaces/ICreateReqBody";
+// import ICreateReqBody from "./interfaces/ICreateReqBody";
 import IErrorMessage from "./interfaces/IErrorMessage";
-import { Response, Request } from "express";
+import { Response } from "express";
 import IShortUrl from "../models/interfaces/IShortUrl";
+import IRequest from "./interfaces/IRequest";
+import IReqBody from "./interfaces/IReqBody";
 
-const CreateShortUrl = async (req: Request, res: Response) => {
+const CreateShortUrl = async (req: IRequest, res: Response) => {
   const errorMessage: IErrorMessage = { code: -1, message: "" };
   try {
-    const { long }: ICreateReqBody = req.body;
+    // const { long }: ICreateReqBody = req.body;
+    const { long }: IReqBody = req.body;
 
     const shortUrl: IShortUrl | null = await ShortUrls.findOne({ long });
 
