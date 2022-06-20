@@ -9,9 +9,8 @@ and this project adheres to [Semantic Versioning](http://semver.org/).
 
 Here we write upgrading notes for brands. It's a team effort to make them as straightforward as possible.
 
-### Fixed
-- Using IResponse & IMessage interfaces in response
-- Add more information for response like  is-successful, message, info  & status code
+### Deprecated 
+- IErrorMessage interface will be removed
 
 ## [0.1.5-beta] - 2022-06-20
 ### Removed
