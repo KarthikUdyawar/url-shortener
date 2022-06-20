@@ -1,6 +1,5 @@
 import { nanoid } from "nanoid";
 import { ShortUrls } from "../models/shortURL.model";
-import IErrorMessage from "./interfaces/IErrorMessage";
 import { Response } from "express";
 import IShortUrl from "../models/interfaces/IShortUrl";
 import IRequest from "./interfaces/IRequest";
@@ -11,7 +10,6 @@ import IMessage from "./interfaces/IMessage";
 const CreateShortUrl = async (req: IRequest, res: Response) => {
   const msg: IMessage = { isSuccessful: false, message: "", info: null };
   const result: IResponse = { code: -1, data: msg };
-  // const errorMessage: IErrorMessage = { code: -1, message: "" };
   try {
     const { long }: IReqBody = req.body;
 
