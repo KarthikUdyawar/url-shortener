@@ -9,11 +9,10 @@ and this project adheres to [Semantic Versioning](http://semver.org/).
 
 Here we write upgrading notes for brands. It's a team effort to make them as straightforward as possible.
 
-### Fixed
-- Use IReqBody instead of ICreateReqBody
 
-### Deprecated 
-- Deprecate ICreateReqBody
+## [0.1.5-beta] - 2022-06-20
+### Removed
+- [7c1fbba](https://github.com/KarthikUdyawar/url-shortener/commit/7c1fbba) - Delete ICreateReqBody interface
 
 ## [0.1.4-beta] - 2022-06-20
 
