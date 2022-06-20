@@ -9,14 +9,11 @@ and this project adheres to [Semantic Versioning](http://semver.org/).
 
 Here we write upgrading notes for brands. It's a team effort to make them as straightforward as possible.
 
-### Changed 
-
-- Modified CHANGELOG.md, nodemon.json & tsconfig.json
-
 ## [0.1.6-beta] - 2022-06-20
 
-### Changes
+### Changed
 
+- [bd95d75](https://github.com/KarthikUdyawar/url-shortener/commit/bd95d75) - Used Prettier
 - [87d536b](https://github.com/KarthikUdyawar/url-shortener/commit/87d536b) - Patch change
 
 ### Removed
