@@ -1,16 +1,18 @@
 import { nanoid } from "nanoid";
 import { ShortUrls } from "../models/shortURL.model";
-// import ICreateReqBody from "./interfaces/ICreateReqBody";
 import IErrorMessage from "./interfaces/IErrorMessage";
 import { Response } from "express";
 import IShortUrl from "../models/interfaces/IShortUrl";
 import IRequest from "./interfaces/IRequest";
 import IReqBody from "./interfaces/IReqBody";
+import IResponse from "./interfaces/IResponse";
+import IMessage from "./interfaces/IMessage";
 
 const CreateShortUrl = async (req: IRequest, res: Response) => {
-  const errorMessage: IErrorMessage = { code: -1, message: "" };
+  const msg: IMessage = { isSuccessful: false, message: "", info: null };
+  const result: IResponse = { code: -1, data: msg };
+  // const errorMessage: IErrorMessage = { code: -1, message: "" };
   try {
-    // const { long }: ICreateReqBody = req.body;
     const { long }: IReqBody = req.body;
 
     const shortUrl: IShortUrl | null = await ShortUrls.findOne({ long });
@@ -25,22 +27,32 @@ const CreateShortUrl = async (req: IRequest, res: Response) => {
           new: true,
         },
       );
-      return res.json({ url: newShortUrl });
+
+      msg.message = `Successfully Updated existing short URL`;
+      msg.info = newShortUrl;
     } else {
       const newShortUrl = await ShortUrls.create({
         long,
         short: nanoid(6),
       });
 
-      return res.json({ url: newShortUrl });
-    }
-  } catch (error) {
-    if (error instanceof Error) {
-      errorMessage.code = 500;
-      errorMessage.message = error.message;
+      msg.message = `Successfully Created new short URL`;
+      msg.info = newShortUrl;
     }
 
-    return res.json({ error: errorMessage });
+    msg.isSuccessful = true;
+    result.code = 200;
+
+    return res.status(result.code).json(result.data);
+  } catch (error) {
+    if (error instanceof Error) {
+      msg.isSuccessful = false;
+      result.code = 500;
+      msg.message = error.name;
+      msg.info = error.message;
+    }
+
+    return res.status(result.code).json(result.data);
   }
 };
 
