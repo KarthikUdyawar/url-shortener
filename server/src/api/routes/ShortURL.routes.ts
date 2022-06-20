@@ -1,5 +1,5 @@
 import { Router } from "express";
-import TestApi from "../controllers/test.controller";
+import TestApi from "../controllers/Test.controller";
 import CreateShortUrl from "../controllers/CreateShortUrl.controller";
 import RedirectShortUrl from "../controllers/RedirectShortUrl.controller";
 
