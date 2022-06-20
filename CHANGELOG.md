@@ -9,9 +9,8 @@ and this project adheres to [Semantic Versioning](http://semver.org/).
 
 Here we write upgrading notes for brands. It's a team effort to make them as straightforward as possible.
 
-### Removed 
-- Deleted IErrorMessage interface
-- Remove useless imports and variables 
+### Fixed 
+- Improve response by adding IResponse interfaces
 
 ## [0.1.6-beta] - 2022-06-20
 ### Added
