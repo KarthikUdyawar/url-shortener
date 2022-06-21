@@ -9,7 +9,8 @@ and this project adheres to [Semantic Versioning](http://semver.org/).
 
 Here we write upgrading notes for brands. It's a team effort to make them as straightforward as possible.
 
-## [0.2.0-beta1] - 2022-06-22
+## [0.2.0] - 2022-06-22
+
 ### Added
 
 - [bac20bf](https://github.com/KarthikUdyawar/url-shortener/commit/bac20bf) - Added new feature
@@ -112,4 +113,4 @@ Here we write upgrading notes for brands. It's a team effort to make them as str
 - [f351ebb](https://github.com/KarthikUdyawar/url-shortener/commit/f351ebb) - Added dependencies
 - [144bac9](https://github.com/KarthikUdyawar/url-shortener/commit/144bac9) - First Commit 🎉
 
-[0.2.0-beta1]: https://github.com/KarthikUdyawar/url-shortener/compare/master...v0.2.0
+[0.2.0]: https://github.com/KarthikUdyawar/url-shortener/compare/master...v0.2.0
