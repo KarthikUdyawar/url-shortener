@@ -3,6 +3,9 @@ import config from "./config/env";
 import express, { Application } from "express";
 import http from "http";
 import routers from "./api/routes/ShortURL.routes";
+import { Headers } from "./api/middleware/Headers";
+import Logger from "./api/middleware/Logger";
+import ErrorHandler from "./api/middleware/Handler/ErrorHandler";
 
 // Boot express
 const app: Application = express();
@@ -10,6 +13,12 @@ const app: Application = express();
 // Request middleware
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
+
+// CORS middleware
+app.use(Headers);
+app.options("*", Headers);
+
+app.use(Logger);
 
 // Database connection
 Promise.resolve(new Database().conn())
@@ -27,3 +36,4 @@ Promise.resolve(new Database().conn())
   });
 
 app.use("/", routers);
+app.use(ErrorHandler);

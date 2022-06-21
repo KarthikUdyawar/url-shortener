@@ -9,8 +9,8 @@ and this project adheres to [Semantic Versioning](http://semver.org/).
 
 Here we write upgrading notes for brands. It's a team effort to make them as straightforward as possible.
 
-### Added
-- Added ErrorHandler to find error message from server side
+### Changed
+- Implement new features like Headers, Logger & ErrorHandler
 
 ## [0.1.6-beta] - 2022-06-20
 
