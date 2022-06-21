@@ -9,8 +9,9 @@ and this project adheres to [Semantic Versioning](http://semver.org/).
 
 Here we write upgrading notes for brands. It's a team effort to make them as straightforward as possible.
 
-### Added
-- Added cors and morgan for middleware
+### Added 
+- Added Headers for all API
+- Added utility GetRequestProtocol to find type of protocols
 
 ## [0.1.6-beta] - 2022-06-20
 
