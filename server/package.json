@@ -1,6 +1,6 @@
 {
   "name": "server",
-  "version": "0.1.2",
+  "version": "0.2.0",
   "description": "url-shortener server",
   "main": "index.js",
   "scripts": {
@@ -18,14 +18,17 @@
   "author": "Karthik Udyawar",
   "license": "MIT",
   "dependencies": {
+    "cors": "^2.8.5",
     "express": "^4.18.1",
     "mongoose": "^6.4.0",
     "nanoid": "3.1.23"
   },
   "devDependencies": {
+    "@types/cors": "^2.8.12",
     "@types/dotenv": "^8.2.0",
     "@types/express": "^4.17.13",
     "@types/mongoose": "^5.11.97",
+    "@types/morgan": "^1.9.3",
     "@types/nanoid": "^3.0.0",
     "@types/node": "^18.0.0",
     "@types/nodemon": "^1.19.1",
@@ -42,6 +45,7 @@
     "eslint-plugin-promise": "^6.0.0",
     "eslint-plugin-react": "^7.30.0",
     "eslint-plugin-standard": "^5.0.0",
+    "morgan": "^1.10.0",
     "nodemon": "^2.0.16",
     "npm-run-all": "^4.1.5",
     "prettier": "^2.7.1",
