@@ -9,8 +9,16 @@ and this project adheres to [Semantic Versioning](http://semver.org/).
 
 Here we write upgrading notes for brands. It's a team effort to make them as straightforward as possible.
 
-### Changed
-- Implement new features like Headers, Logger & ErrorHandler
+## [0.2.0-beta1] - 2022-06-22
+### Added
+
+- [bac20bf](https://github.com/KarthikUdyawar/url-shortener/commit/bac20bf) - Added new feature
+- [92bc9e9](https://github.com/KarthikUdyawar/url-shortener/commit/92bc9e9) - Added ErrorHandler
+- [48735b1](https://github.com/KarthikUdyawar/url-shortener/commit/48735b1) - Added HttpException
+- [41e67dc](https://github.com/KarthikUdyawar/url-shortener/commit/41e67dc) - Added Logger
+- [bb8e7d6](https://github.com/KarthikUdyawar/url-shortener/commit/bb8e7d6) - Added cors middleware
+- [9113f5d](https://github.com/KarthikUdyawar/url-shortener/commit/9113f5d) - Added new dependencies
+- [49319e9](https://github.com/KarthikUdyawar/url-shortener/commit/49319e9) - Miner changes
 
 ## [0.1.6-beta] - 2022-06-20
 
@@ -103,3 +111,5 @@ Here we write upgrading notes for brands. It's a team effort to make them as str
 - [b1d5156](https://github.com/KarthikUdyawar/url-shortener/commit/b1d5156) - Added Eslint + Prettier + Nodemon configuration for Typescript
 - [f351ebb](https://github.com/KarthikUdyawar/url-shortener/commit/f351ebb) - Added dependencies
 - [144bac9](https://github.com/KarthikUdyawar/url-shortener/commit/144bac9) - First Commit 🎉
+
+[0.2.0-beta1]: https://github.com/KarthikUdyawar/url-shortener/compare/master...v0.2.0
