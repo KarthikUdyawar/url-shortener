@@ -5,7 +5,6 @@ import http from "http";
 import routers from "./api/routes/ShortURL.routes";
 import { Headers } from "./api/middleware/Headers";
 import Logger from "./api/middleware/Logger";
-import ErrorHandler from "./api/middleware/Handler/ErrorHandler";
 
 // Boot express
 const app: Application = express();
@@ -36,4 +35,3 @@ Promise.resolve(new Database().conn())
   });
 
 app.use("/", routers);
-app.use(ErrorHandler);

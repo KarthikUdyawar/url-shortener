@@ -6,6 +6,8 @@ import IRequest from "./interfaces/IRequest";
 import IReqBody from "./interfaces/IReqBody";
 import IResponse from "./interfaces/IResponse";
 import IMessage from "./interfaces/IMessage";
+import ErrorHandler from "../middleware/Handler/ErrorHandler";
+import HttpException from "../middleware/Exceptions/HttpException";
 
 const CreateShortUrl = async (req: IRequest, res: Response) => {
   const msg: IMessage = { isSuccessful: false, message: "", info: null };
@@ -44,13 +46,8 @@ const CreateShortUrl = async (req: IRequest, res: Response) => {
     return res.status(result.code).json(result.data);
   } catch (error) {
     if (error instanceof Error) {
-      msg.isSuccessful = false;
-      result.code = 500;
-      msg.message = error.name;
-      msg.info = error.message;
+      ErrorHandler(error as HttpException, res);
     }
-
-    return res.status(result.code).json(result.data);
   }
 };
 
