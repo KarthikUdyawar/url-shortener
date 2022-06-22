@@ -9,6 +9,11 @@ and this project adheres to [Semantic Versioning](http://semver.org/).
 
 Here we write upgrading notes for brands. It's a team effort to make them as straightforward as possible.
 
+### Fixed
+- Added isSuccessful state in HttpException
+- Required changes to all controllers error handlers
+- Remove app.use(ErrorHandler) in main
+
 ## [0.2.0] - 2022-06-22
 
 ### Added
@@ -112,5 +117,3 @@ Here we write upgrading notes for brands. It's a team effort to make them as str
 - [b1d5156](https://github.com/KarthikUdyawar/url-shortener/commit/b1d5156) - Added Eslint + Prettier + Nodemon configuration for Typescript
 - [f351ebb](https://github.com/KarthikUdyawar/url-shortener/commit/f351ebb) - Added dependencies
 - [144bac9](https://github.com/KarthikUdyawar/url-shortener/commit/144bac9) - First Commit 🎉
-
-[0.2.0]: https://github.com/KarthikUdyawar/url-shortener/compare/master...v0.2.0
