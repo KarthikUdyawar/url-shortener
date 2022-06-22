@@ -9,11 +9,6 @@ and this project adheres to [Semantic Versioning](http://semver.org/).
 
 Here we write upgrading notes for brands. It's a team effort to make them as straightforward as possible.
 
-### Fixed
-- Added isSuccessful state in HttpException
-- Required changes to all controllers error handlers
-- Remove app.use(ErrorHandler) in main
-
 ## [0.2.0] - 2022-06-22
 
 ### Added
@@ -25,6 +20,14 @@ Here we write upgrading notes for brands. It's a team effort to make them as str
 - [bb8e7d6](https://github.com/KarthikUdyawar/url-shortener/commit/bb8e7d6) - Added cors middleware
 - [9113f5d](https://github.com/KarthikUdyawar/url-shortener/commit/9113f5d) - Added new dependencies
 - [49319e9](https://github.com/KarthikUdyawar/url-shortener/commit/49319e9) - Miner changes
+
+### Changed
+- [db91dd0](https://github.com/KarthikUdyawar/url-shortener/commit/db91dd0) - Update CHANGELOG.md
+- [9734c27](https://github.com/KarthikUdyawar/url-shortener/commit/9734c27) - Update CHANGELOG.md
+
+### Fixed
+
+- [07cdda1](https://github.com/KarthikUdyawar/url-shortener/commit/07cdda1) - Fixed Error ErrorHandler
 
 ## [0.1.6-beta] - 2022-06-20
 
