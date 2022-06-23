@@ -9,35 +9,46 @@ and this project adheres to [Semantic Versioning](http://semver.org/).
 
 Here we write upgrading notes for brands. It's a team effort to make them as straightforward as possible.
 
+## [0.9.1] - 2022-06-24
+
+### Changed
+
+- Cleaning CHANGELOG.md
+
 ## [0.9.0] - 2022-06-24
 
 ### Added
 
-- Added customize for short URL for users
+- [bd2fea5](https://github.com/KarthikUdyawar/url-shortener/commit/bd2fea5) - Added customize for short URL for users
 
 ## [0.8.4] - 2022-06-24
 
 ### Fixed
-- Increase the maxLength of short up to 16
+
+- [a39a19d](https://github.com/KarthikUdyawar/url-shortener/commit/a39a19d) - Increase the maxLength of short up to 16
 
 ## [0.8.3] - 2022-06-24
 
 ### Fixed
+
 - [d49574b](https://github.com/KarthikUdyawar/url-shortener/commit/d49574b) - Changed RedirectShortUrl API router /:id -> /mini/:id
 
 ## [0.8.2] - 2022-06-24
 
 ### Fixed
+
 - [22de5a5](https://github.com/KarthikUdyawar/url-shortener/commit/22de5a5) - Changed FetchShortUrlsById API router /:id -> /url/:id
 
 ## [0.8.1] - 2022-06-23
 
 ### Changed
+
 - [8fbaa1e](https://github.com/KarthikUdyawar/url-shortener/commit/8fbaa1e) - Add links to all versions 
 
 ## [0.8.0] - 2022-06-23
 
 ### Added
+
 - [0fc583a](https://github.com/KarthikUdyawar/url-shortener/commit/0fc583a) - Added new controller called UpdateShortUrlById that update data by id from the database for admin
 
 ## [0.7.0] - 2022-06-23
