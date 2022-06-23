@@ -8,7 +8,7 @@ const AdminRoutes: Router = Router();
 
 AdminRoutes.get("/all", FetchShortUrlsAll);
 
-AdminRoutes.get("/:id", FetchShortUrlsById);
+AdminRoutes.get("/url/:id", FetchShortUrlsById);
 
 AdminRoutes.delete("/delete/:id", DeleteShortUrlById);
 

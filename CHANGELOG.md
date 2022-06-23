@@ -9,10 +9,15 @@ and this project adheres to [Semantic Versioning](http://semver.org/).
 
 Here we write upgrading notes for brands. It's a team effort to make them as straightforward as possible.
 
+## [0.8.2] - 2022-06-24
+
+### Fixed
+- Changed FetchShortUrlsById API router /:id -> /url/:id
+
 ## [0.8.1] - 2022-06-23
 
 ### Changed
-- Add links to all versions 
+- [8fbaa1e](https://github.com/KarthikUdyawar/url-shortener/commit/8fbaa1e) - Add links to all versions 
 
 ## [0.8.0] - 2022-06-23
 
