@@ -9,37 +9,45 @@ and this project adheres to [Semantic Versioning](http://semver.org/).
 
 Here we write upgrading notes for brands. It's a team effort to make them as straightforward as possible.
 
+## [0.8.1] - 2022-06-23
+
+### Changed
+- Add links to all versions 
+
 ## [0.8.0] - 2022-06-23
 
 ### Added
-- Added new controller called UpdateShortUrlById that update data by id from the database for admin
+- [0fc583a](https://github.com/KarthikUdyawar/url-shortener/commit/0fc583a) - Added new controller called UpdateShortUrlById that update data by id from the database for admin
 
 ## [0.7.0] - 2022-06-23
 
 ### Added
-- Added new controller called DeleteShortUrlById that delete data by id from the database for admin
+
+- [fd4517b](https://github.com/KarthikUdyawar/url-shortener/commit/fd4517b) - Added new controller called DeleteShortUrlById that delete data by id from the database for admin
 
 ## [0.6.0] - 2022-06-23
 
 ### Added
-- Added new controller called FetchShortUrlsById that fetch data by id from the database for admin
+
+- [4bff6e2](https://github.com/KarthikUdyawar/url-shortener/commit/4bff6e2) - Added new controller called FetchShortUrlsById that fetch data by id from the database for admin
 
 ## [0.5.0] - 2022-06-23
 
 ### Added
-- Added new controller called FetchShortUrlsAll that fetch all data from the database for admin
+
+- [164b3ec](https://github.com/KarthikUdyawar/url-shortener/commit/164b3ec) - Added new controller called FetchShortUrlsAll that fetch all data from the database for admin
 
 ## [0.4.0] - 2022-06-23
 
 ### Added
 
-- Added new admin router for admin mode
+- [17d8d9d](https://github.com/KarthikUdyawar/url-shortener/commit/17d8d9d) - Added new admin router for admin mode
 
 ## [0.3.0] - 2022-06-23
 
 ### Changed
 
-- Rename routers to ShortUrlRoutes for organization 
+- [7686f50](https://github.com/KarthikUdyawar/url-shortener/commit/7686f50) - Rename routers to ShortUrlRoutes for organization 
 
 ## [0.2.0] - 2022-06-22
 
