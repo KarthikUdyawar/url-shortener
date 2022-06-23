@@ -13,6 +13,12 @@ Here we write upgrading notes for brands. It's a team effort to make them as str
 
 ### Changed
 
+- Cleaning isValidHttpUrl
+
+## [0.9.1] - 2022-06-24
+
+### Changed
+
 - Cleaning CHANGELOG.md
 
 ## [0.9.0] - 2022-06-24
