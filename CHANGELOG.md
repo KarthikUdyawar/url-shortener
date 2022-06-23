@@ -9,17 +9,23 @@ and this project adheres to [Semantic Versioning](http://semver.org/).
 
 Here we write upgrading notes for brands. It's a team effort to make them as straightforward as possible.
 
+## [0.9.2] - 2022-06-24
+
+### Changed
+
+- Formatted CHANGELOG.md & tsconfig.json
+
 ## [0.9.1] - 2022-06-24
 
 ### Changed
 
-- Cleaning isValidHttpUrl
+- [279f04d](https://github.com/KarthikUdyawar/url-shortener/commit/279f04d) - Cleaning isValidHttpUrl
 
 ## [0.9.1] - 2022-06-24
 
 ### Changed
 
-- Cleaning CHANGELOG.md
+- [8f5390f](https://github.com/KarthikUdyawar/url-shortener/commit/8f5390f) - Cleaning CHANGELOG.md
 
 ## [0.9.0] - 2022-06-24
 
@@ -49,7 +55,7 @@ Here we write upgrading notes for brands. It's a team effort to make them as str
 
 ### Changed
 
-- [8fbaa1e](https://github.com/KarthikUdyawar/url-shortener/commit/8fbaa1e) - Add links to all versions 
+- [8fbaa1e](https://github.com/KarthikUdyawar/url-shortener/commit/8fbaa1e) - Add links to all versions
 
 ## [0.8.0] - 2022-06-23
 
@@ -85,7 +91,7 @@ Here we write upgrading notes for brands. It's a team effort to make them as str
 
 ### Changed
 
-- [7686f50](https://github.com/KarthikUdyawar/url-shortener/commit/7686f50) - Rename routers to ShortUrlRoutes for organization 
+- [7686f50](https://github.com/KarthikUdyawar/url-shortener/commit/7686f50) - Rename routers to ShortUrlRoutes for organization
 
 ## [0.2.0] - 2022-06-22
 
@@ -100,6 +106,7 @@ Here we write upgrading notes for brands. It's a team effort to make them as str
 - [49319e9](https://github.com/KarthikUdyawar/url-shortener/commit/49319e9) - Miner changes
 
 ### Changed
+
 - [db91dd0](https://github.com/KarthikUdyawar/url-shortener/commit/db91dd0) - Update CHANGELOG.md
 - [9734c27](https://github.com/KarthikUdyawar/url-shortener/commit/9734c27) - Update CHANGELOG.md
 
