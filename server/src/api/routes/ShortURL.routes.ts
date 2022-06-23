@@ -9,6 +9,6 @@ ShortUrlRoutes.get("/test", TestApi);
 
 ShortUrlRoutes.post("/create", CreateShortUrl);
 
-ShortUrlRoutes.get("/:id", RedirectShortUrl);
+ShortUrlRoutes.get("/mini/:id", RedirectShortUrl);
 
 export default ShortUrlRoutes;

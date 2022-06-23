@@ -18,7 +18,7 @@ const FetchShortUrlsAll = async (req: Request, res: Response) => {
       const info = {
         id: url._id,
         long: url.long,
-        short: `${GetRequestProtocol()}://${config.HOST}:${config.PORT}/${url.short}`,
+        short: `${GetRequestProtocol()}://${config.HOST}:${config.PORT}/mini/${url.short}`,
         createdAt: url.createdAt,
       };
 

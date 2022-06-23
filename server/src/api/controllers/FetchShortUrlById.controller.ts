@@ -19,7 +19,8 @@ const FetchShortUrlsById = async (req: IRequest, res: Response) => {
     const data = {
       id: shortUrls?._id ?? null,
       long: shortUrls?.long ?? null,
-      short: `${GetRequestProtocol()}://${config.HOST}:${config.PORT}/${shortUrls?.short}` ?? null,
+      short:
+        `${GetRequestProtocol()}://${config.HOST}:${config.PORT}/mini/${shortUrls?.short}` ?? null,
       createdAt: shortUrls?.createdAt ?? null,
     };
 
