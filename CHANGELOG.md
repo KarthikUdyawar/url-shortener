@@ -9,10 +9,15 @@ and this project adheres to [Semantic Versioning](http://semver.org/).
 
 Here we write upgrading notes for brands. It's a team effort to make them as straightforward as possible.
 
+## [0.8.4] - 2022-06-24
+
+### Fixed
+- Increase the maxLength of short up to 16
+
 ## [0.8.3] - 2022-06-24
 
 ### Fixed
-- Changed RedirectShortUrl API router /:id -> /mini/:id
+- [d49574b](https://github.com/KarthikUdyawar/url-shortener/commit/d49574b) - Changed RedirectShortUrl API router /:id -> /mini/:id
 
 ## [0.8.2] - 2022-06-24
 
