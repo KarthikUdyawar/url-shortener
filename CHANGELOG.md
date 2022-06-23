@@ -9,6 +9,12 @@ and this project adheres to [Semantic Versioning](http://semver.org/).
 
 Here we write upgrading notes for brands. It's a team effort to make them as straightforward as possible.
 
+## [0.9.0] - 2022-06-24
+
+### Added
+
+- Added customize for short URL for users
+
 ## [0.8.4] - 2022-06-24
 
 ### Fixed

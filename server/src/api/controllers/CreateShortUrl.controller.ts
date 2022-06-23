@@ -14,7 +14,7 @@ const CreateShortUrl = async (req: IRequest, res: Response) => {
   const msg: IMessage = { isSuccessful: false, message: "", info: null };
   const result: IResponse = { code: -1, data: msg };
   try {
-    const { long }: IReqBody = req.body;
+    const { long, customize }: IReqBody = req.body;
 
     if (!isValidHttpUrl(long)) {
       msg.isSuccessful = false;
@@ -42,7 +42,7 @@ const CreateShortUrl = async (req: IRequest, res: Response) => {
     } else {
       const newShortUrl = await ShortUrls.create({
         long,
-        short: nanoid(6),
+        short: customize.length ? `${nanoid(6)}-${customize}` : nanoid(6),
       });
 
       msg.message = `Successfully Created new short URL`;
