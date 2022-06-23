@@ -9,6 +9,11 @@ and this project adheres to [Semantic Versioning](http://semver.org/).
 
 Here we write upgrading notes for brands. It's a team effort to make them as straightforward as possible.
 
+## [0.8.0] - 2022-06-23
+
+### Added
+- Added new controller called UpdateShortUrlById that update data by id from the database for admin
+
 ## [0.7.0] - 2022-06-23
 
 ### Added
