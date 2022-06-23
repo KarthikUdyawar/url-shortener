@@ -2,9 +2,9 @@ import Database from "./config/database";
 import config from "./config/env";
 import express, { Application } from "express";
 import http from "http";
-import routers from "./api/routes/ShortURL.routes";
 import { Headers } from "./api/middleware/Headers";
 import Logger from "./api/middleware/Logger";
+import ShortUrlRoutes from "./api/routes/ShortURL.routes";
 
 // Boot express
 const app: Application = express();
@@ -34,4 +34,4 @@ Promise.resolve(new Database().conn())
     console.log("Connection Error: ", error);
   });
 
-app.use("/", routers);
+app.use("/", ShortUrlRoutes);

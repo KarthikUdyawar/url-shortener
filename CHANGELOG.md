@@ -9,6 +9,12 @@ and this project adheres to [Semantic Versioning](http://semver.org/).
 
 Here we write upgrading notes for brands. It's a team effort to make them as straightforward as possible.
 
+## [0.3.0] - 2022-06-23
+
+### Changed
+
+- Rename routers to ShortUrlRoutes for organization 
+
 ## [0.2.0] - 2022-06-22
 
 ### Added
