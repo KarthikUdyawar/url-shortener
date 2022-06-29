@@ -9,11 +9,17 @@ and this project adheres to [Semantic Versioning](http://semver.org/).
 
 Here we write upgrading notes for brands. It's a team effort to make them as straightforward as possible.
 
+## [1.1.0] - 2022-06-29
+
+### Added
+
+- Create MongoDB atlas  and port for production mode
+
 ## [1.0.0] - 2022-06-29
 
 ### Added
 
-- Build the project in dist directory
+- [6077d10](https://github.com/KarthikUdyawar/url-shortener/commit/6077d10) - Build the project in dist directory
 
 ## [0.9.2] - 2022-06-24
 
