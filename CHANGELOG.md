@@ -9,11 +9,17 @@ and this project adheres to [Semantic Versioning](http://semver.org/).
 
 Here we write upgrading notes for brands. It's a team effort to make them as straightforward as possible.
 
+## [1.0.0] - 2022-06-29
+
+### Added
+
+- Build the project in dist directory
+
 ## [0.9.2] - 2022-06-24
 
 ### Changed
 
-- Formatted CHANGELOG.md & tsconfig.json
+- [931073c](https://github.com/KarthikUdyawar/url-shortener/commit/931073c) - Formatted CHANGELOG.md & tsconfig.json
 
 ## [0.9.1] - 2022-06-24
 
