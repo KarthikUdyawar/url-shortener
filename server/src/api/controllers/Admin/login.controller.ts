@@ -9,6 +9,7 @@ import { Response } from "express";
 import bcrypt from "bcrypt";
 import jwt from "jsonwebtoken";
 import { nanoid } from "nanoid";
+import HttpStatus from "../../utils/HttpStatus";
 
 const AdminLogin = async (req: IAdminRequest, res: Response) => {
   const msg: IMessage = { isSuccessful: false, message: "", info: null };
@@ -21,14 +22,14 @@ const AdminLogin = async (req: IAdminRequest, res: Response) => {
     const { name, password }: IAdminReqBody = req.body;
     if (name !== ADMIN_NAME) {
       msg.isSuccessful = false;
-      result.code = 404;
+      result.code = HttpStatus.notFound;
       msg.message = `Failed login`;
       msg.info = "Admin name not found";
     }
     const isMatch = await bcrypt.compareSync(ADMIN_PASSWORD, password);
     if (!isMatch) {
       msg.isSuccessful = false;
-      result.code = 404;
+      result.code = HttpStatus.notFound;
       msg.message = `Failed login`;
       msg.info = "Admin password does not match";
     }
@@ -38,7 +39,7 @@ const AdminLogin = async (req: IAdminRequest, res: Response) => {
     };
     const token = jwt.sign(payload, JWT_SECRET, { expiresIn: "1h" });
     msg.isSuccessful = true;
-    result.code = 200;
+    result.code = HttpStatus.OK;
     msg.message = `Successfully Login`;
     msg.info = token;
 

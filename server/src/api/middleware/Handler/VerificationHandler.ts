@@ -6,6 +6,7 @@ import HttpException from "../Exceptions/HttpException";
 import IMessage from "../../controllers/interfaces/IMessage";
 import IResponse from "../../controllers/interfaces/IResponse";
 import GetRequestProtocol from "../../utils/GetRequestProtocol";
+import HttpStatus from "../../utils/HttpStatus";
 
 const VerificationHandler = async (req: Request, res: Response, next: NextFunction) => {
   // Get token from header
@@ -32,7 +33,7 @@ const VerificationHandler = async (req: Request, res: Response, next: NextFuncti
     jwt.verify(token, JWT_SECRET, (error, decoded) => {
       if (error) {
         msg.isSuccessful = false;
-        result.code = 301;
+        result.code = HttpStatus.movedPermanently;
         msg.message = `Token not found`;
         msg.info = `${GetRequestProtocol()}://${config.HOST}:${config.PORT}/admin/index.html`;
         return res.redirect(result.code, msg.info);
@@ -40,7 +41,7 @@ const VerificationHandler = async (req: Request, res: Response, next: NextFuncti
         // return res.status(401).json({ msg: "Token is not valid" });
       } else {
         msg.isSuccessful = true;
-        result.code = 200;
+        result.code = HttpStatus.OK;
         msg.message = `Token found`;
         msg.info = decoded;
         next();

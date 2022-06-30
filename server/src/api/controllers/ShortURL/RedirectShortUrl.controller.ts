@@ -7,6 +7,7 @@ import IMessage from "../interfaces/IMessage";
 import IResponse from "../interfaces/IResponse";
 import ErrorHandler from "../../middleware/Handler/ErrorHandler";
 import HttpException from "../../middleware/Exceptions/HttpException";
+import HttpStatus from "../../utils/HttpStatus";
 
 const RedirectShortUrl = async (req: IRequest, res: Response) => {
   const msg: IMessage = { isSuccessful: false, message: "", info: null };
@@ -23,13 +24,13 @@ const RedirectShortUrl = async (req: IRequest, res: Response) => {
 
     if (data.long) {
       msg.isSuccessful = true;
-      result.code = 301;
+      result.code = HttpStatus.movedPermanently;
       msg.message = `Successfully Redirected short URL to its destination`;
       msg.info = data.long;
       return res.redirect(result.code, msg.info);
     } else {
       msg.isSuccessful = false;
-      result.code = 404;
+      result.code = HttpStatus.notFound;
       msg.message = `404 Not Found`;
       msg.info = `Could not find the long link for this short link ${id}`;
       return res.status(result.code).json(result.data);

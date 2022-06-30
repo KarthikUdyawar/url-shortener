@@ -7,6 +7,7 @@ import IResponse from "../interfaces/IResponse";
 import IShortUrl from "../../models/interfaces/IShortUrl";
 import IRequest from "../interfaces/IRequest";
 import IReqParams from "../interfaces/IReqParams";
+import HttpStatus from "../../utils/HttpStatus";
 
 const DeleteShortUrlById = async (req: IRequest, res: Response) => {
   const msg: IMessage = { isSuccessful: false, message: "", info: null };
@@ -17,7 +18,7 @@ const DeleteShortUrlById = async (req: IRequest, res: Response) => {
 
     if (shortUrls) {
       msg.isSuccessful = true;
-      result.code = 200;
+      result.code = HttpStatus.OK;
       msg.message = `Successfully Deleted URL by id`;
       msg.info = shortUrls;
     }

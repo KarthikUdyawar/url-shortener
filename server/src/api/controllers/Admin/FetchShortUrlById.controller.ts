@@ -9,6 +9,7 @@ import GetRequestProtocol from "../../utils/GetRequestProtocol";
 import config from "../../../config/env";
 import IRequest from "../interfaces/IRequest";
 import IReqParams from "../interfaces/IReqParams";
+import HttpStatus from "../../utils/HttpStatus";
 
 const FetchShortUrlsById = async (req: IRequest, res: Response) => {
   const msg: IMessage = { isSuccessful: false, message: "", info: null };
@@ -25,7 +26,7 @@ const FetchShortUrlsById = async (req: IRequest, res: Response) => {
     };
 
     msg.isSuccessful = true;
-    result.code = 200;
+    result.code = HttpStatus.OK;
     msg.message = `Successfully Fetch short URL by id`;
     msg.info = data;
 

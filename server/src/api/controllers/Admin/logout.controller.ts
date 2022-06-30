@@ -4,6 +4,7 @@ import { Request, Response } from "express";
 import ErrorHandler from "../../middleware/Handler/ErrorHandler";
 import HttpException from "../../middleware/Exceptions/HttpException";
 import jwt from "jsonwebtoken";
+import HttpStatus from "../../utils/HttpStatus";
 
 const AdminLogout = async (req: Request, res: Response) => {
   const msg: IMessage = { isSuccessful: false, message: "", info: null };
@@ -16,12 +17,12 @@ const AdminLogout = async (req: Request, res: Response) => {
       jwt.sign(token, "", { expiresIn: 0 }, (logout, error) => {
         if (logout) {
           msg.isSuccessful = true;
-          result.code = 200;
+          result.code = HttpStatus.OK;
           msg.message = `Successfully Logout`;
           msg.info = logout;
         } else {
           msg.isSuccessful = false;
-          result.code = 404;
+          result.code = HttpStatus.notFound;
           msg.message = `Failed  Logout`;
           msg.info = error;
         }

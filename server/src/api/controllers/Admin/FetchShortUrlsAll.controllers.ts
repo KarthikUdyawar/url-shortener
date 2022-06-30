@@ -7,6 +7,7 @@ import IResponse from "../interfaces/IResponse";
 import IShortUrl from "../../models/interfaces/IShortUrl";
 import GetRequestProtocol from "../../utils/GetRequestProtocol";
 import config from "../../../config/env";
+import HttpStatus from "../../utils/HttpStatus";
 
 const FetchShortUrlsAll = async (req: Request, res: Response) => {
   const msg: IMessage = { isSuccessful: false, message: "", info: null };
@@ -26,7 +27,7 @@ const FetchShortUrlsAll = async (req: Request, res: Response) => {
     });
 
     msg.isSuccessful = true;
-    result.code = 200;
+    result.code = HttpStatus.OK;
     msg.message = `Successfully Fetch all short URL`;
     msg.info = data;
 

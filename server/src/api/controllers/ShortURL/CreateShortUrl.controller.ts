@@ -9,6 +9,7 @@ import IMessage from "../interfaces/IMessage";
 import ErrorHandler from "../../middleware/Handler/ErrorHandler";
 import HttpException from "../../middleware/Exceptions/HttpException";
 import isValidHttpUrl from "../../utils/isValidHttpUrl";
+import HttpStatus from "../../utils/HttpStatus";
 
 const CreateShortUrl = async (req: IRequest, res: Response) => {
   const msg: IMessage = { isSuccessful: false, message: "", info: null };
@@ -18,7 +19,7 @@ const CreateShortUrl = async (req: IRequest, res: Response) => {
 
     if (!isValidHttpUrl(long)) {
       msg.isSuccessful = false;
-      result.code = 404;
+      result.code = HttpStatus.notFound;
       msg.message = `404 Not Found`;
       msg.info = `Invalid URL found: ${long}`;
       return res.status(result.code).json(result.data);
@@ -50,7 +51,7 @@ const CreateShortUrl = async (req: IRequest, res: Response) => {
     }
 
     msg.isSuccessful = true;
-    result.code = 200;
+    result.code = HttpStatus.OK;
 
     return res.status(result.code).json(result.data);
   } catch (error) {

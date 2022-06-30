@@ -7,6 +7,7 @@ import IResponse from "./../interfaces/IResponse";
 import IRequest from "./../interfaces/IRequest";
 import IReqParams from "./../interfaces/IReqParams";
 import IReqBody from "./../interfaces/IReqBody";
+import HttpStatus from "../../utils/HttpStatus";
 
 const UpdateShortUrlsById = async (req: IRequest, res: Response) => {
   const msg: IMessage = { isSuccessful: false, message: "", info: null };
@@ -19,7 +20,7 @@ const UpdateShortUrlsById = async (req: IRequest, res: Response) => {
 
     if (urls.length) {
       msg.isSuccessful = false;
-      result.code = 409;
+      result.code = HttpStatus.conflict;
       msg.message = `Short URL already exist`;
       msg.info = urls;
 
@@ -35,7 +36,7 @@ const UpdateShortUrlsById = async (req: IRequest, res: Response) => {
     );
 
     msg.isSuccessful = true;
-    result.code = 200;
+    result.code = HttpStatus.OK;
     msg.message = `Successfully Updated URL by id`;
     msg.info = newShortUrl;
 

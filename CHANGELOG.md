@@ -9,7 +9,14 @@ and this project adheres to [Semantic Versioning](http://semver.org/).
 
 Here we write upgrading notes for brands. It's a team effort to make them as straightforward as possible.
 
+## [1.5.1] - 2022-06-30
+
+### Fixed
+
+- Using HttpStatus to all required files
+
 ## [1.5.0] - 2022-06-30
+
 ### Added
 
 - HttpStatus utility for http status code 
