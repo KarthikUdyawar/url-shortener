@@ -10,7 +10,6 @@ import bcrypt from "bcrypt";
 import jwt from "jsonwebtoken";
 import { nanoid } from "nanoid";
 
-
 const AdminLogin = async (req: IAdminRequest, res: Response) => {
   const msg: IMessage = { isSuccessful: false, message: "", info: null };
   const result: IResponse = { code: -1, data: msg };

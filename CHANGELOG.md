@@ -9,86 +9,79 @@ and this project adheres to [Semantic Versioning](http://semver.org/).
 
 Here we write upgrading notes for brands. It's a team effort to make them as straightforward as possible.
 
+### Changed
+
+- Formatted all files and update CHANGELOG.md 
+
 ## [1.4.3] - 2022-06-30
 
 ### Added
 
-- Added admin login page 
+- [ab9a5d8](https://github.com/KarthikUdyawar/url-shortener/commit/ab9a5d8) - Added admin login page 
 
 ## [1.4.2] - 2022-06-30
 
 ### Added
 
-- Added VerificationHandler to check the validity of the JWT.
+- [978eb39](https://github.com/KarthikUdyawar/url-shortener/commit/978eb39) - Added VerificationHandler to check the validity of the JWT.
 
 ## [1.4.1] - 2022-06-30
 
 ### Added
 
-- Added logout system
-- Divide AdminRoutes into AdminRoutesProtective & AdminRoutesUnProtective
-- Unstable
+- [77fa865](https://github.com/KarthikUdyawar/url-shortener/commit/77fa865) - Added logout system
 
 ## [1.4.0] - 2022-06-30
 
 ### Added
 
-- Added login system for admin 
-- Require admin name and password for login (.env)
-- Using JWT token
+- [a77feb8](https://github.com/KarthikUdyawar/url-shortener/commit/a77feb8) - Added login system for admin 
 
 ## [1.3.1] - 2022-06-30
 
 ### Fixed
 
-- Config the environmental variables 
+- [73d7ee7](https://github.com/KarthikUdyawar/url-shortener/commit/73d7ee7) - Config the environmental variables 
 
 ## [1.3.0] - 2022-06-30
 
 ### Added
 
-- Added HashAPI that converts string into hash
+- [0e6f93a](https://github.com/KarthikUdyawar/url-shortener/commit/0e6f93a) - Added HashAPI that converts string into hash
 
 ### Changed
 
-- Create new folder called Helper.
-- Put all Helper controllers in this file
-- Required changes to Helper.routes
+- [0e6f93a](https://github.com/KarthikUdyawar/url-shortener/commit/0e6f93a) - File Manager 3
 
 ## [1.2.3] - 2022-06-30
 
 ### Changed
 
-- Create new folder called ShortURL.
-- Put all ShortURL controllers in this file
-- Required changes to ShortURL.routes
+- [1f12173](https://github.com/KarthikUdyawar/url-shortener/commit/1f12173) - - File Manager 2
 
 ## [1.2.2] - 2022-06-30
 
 ### Changed
 
-- Create new folder called Admin.
-- Put all admin controllers in this file
-- Required changes to Admin.routes
+-- [5834a96](https://github.com/KarthikUdyawar/url-shortener/commit/5834a96) - File Manager 1 
 
 ## [1.2.1] - 2022-06-30
 
 ### Added
 
-- Added ADMIN_NAME, ADMIN_PASSWORD & JWT_SECRET to environment variables
+- [63b085f](https://github.com/KarthikUdyawar/url-shortener/commit/63b085f) - Added ADMIN_NAME, ADMIN_PASSWORD & JWT_SECRET to environment variables
 
 ## [1.2.0] - 2022-06-30
 
 ### Added 
 
-- Added bcrypt and jsonwebtoken
-
+- [d9baa7e](https://github.com/KarthikUdyawar/url-shortener/commit/d9baa7e) - Added bcrypt and jsonwebtoken
 
 ## [1.1.0] - 2022-06-29
 
 ### Added
 
-- Create MongoDB atlas  and port for production mode
+- [767526f](https://github.com/KarthikUdyawar/url-shortener/commit/767526f)- Create MongoDB atlas  and port for production mode
 
 ## [1.0.0] - 2022-06-29
 
