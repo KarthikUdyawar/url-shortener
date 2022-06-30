@@ -1,6 +1,6 @@
 import { Response, Request } from "express";
-import HttpException from "../middleware/Exceptions/HttpException";
-import ErrorHandler from "../middleware/Handler/ErrorHandler";
+import HttpException from "../../middleware/Exceptions/HttpException";
+import ErrorHandler from "../../middleware/Handler/ErrorHandler";
 
 const TestApi = async (req: Request, res: Response) => {
   try {

@@ -9,6 +9,18 @@ and this project adheres to [Semantic Versioning](http://semver.org/).
 
 Here we write upgrading notes for brands. It's a team effort to make them as straightforward as possible.
 
+## [1.3.0] - 2022-06-30
+
+### Added
+
+- Added HashAPI that converts string into hash
+
+### Changed
+
+- Create new folder called Helper.
+- Put all Helper controllers in this file
+- Required changes to Helper.routes
+
 ## [1.2.3] - 2022-06-30
 
 ### Changed

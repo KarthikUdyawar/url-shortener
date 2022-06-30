@@ -6,6 +6,7 @@ import { Headers } from "./api/middleware/Headers";
 import Logger from "./api/middleware/Logger";
 import ShortUrlRoutes from "./api/routes/ShortURL.routes";
 import AdminRoutes from "./api/routes/Admin.routes";
+import HelperRoutes from "./api/routes/Helper.routes";
 
 // Boot express
 const app: Application = express();
@@ -37,3 +38,4 @@ Promise.resolve(new Database().conn())
 
 app.use("/", ShortUrlRoutes);
 app.use("/admin", AdminRoutes);
+app.use("/helper", HelperRoutes);
