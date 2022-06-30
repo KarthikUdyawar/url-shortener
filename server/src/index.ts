@@ -6,10 +6,12 @@ import { Headers } from "./api/middleware/Headers";
 import Logger from "./api/middleware/Logger";
 import ShortUrlRoutes from "./api/routes/ShortURL.routes";
 import { AdminRoutesProtective, AdminRoutesUnProtective } from "./api/routes/Admin.routes";
+import VerificationHandler from "./api/middleware/Handler/VerificationHandler";
 import HelperRoutes from "./api/routes/Helper.routes";
 
 // Boot express
 const app: Application = express();
+app.use("/admin", express.static(path.join(__dirname, "static")));
 
 // Request middleware
 app.use(express.json());

@@ -9,6 +9,12 @@ and this project adheres to [Semantic Versioning](http://semver.org/).
 
 Here we write upgrading notes for brands. It's a team effort to make them as straightforward as possible.
 
+## [1.4.2] - 2022-06-30
+
+### Added
+
+- Added VerificationHandler to check the validity of the JWT.
+
 ## [1.4.1] - 2022-06-30
 
 ### Added
