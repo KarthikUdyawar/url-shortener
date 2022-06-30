@@ -9,6 +9,14 @@ and this project adheres to [Semantic Versioning](http://semver.org/).
 
 Here we write upgrading notes for brands. It's a team effort to make them as straightforward as possible.
 
+## [1.2.3] - 2022-06-30
+
+### Changed
+
+- Create new folder called ShortURL.
+- Put all ShortURL controllers in this file
+- Required changes to ShortURL.routes
+
 ## [1.2.2] - 2022-06-30
 
 ### Changed
