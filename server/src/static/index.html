@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>Login</h1>
+    <form id="login-form">
+      <input type="text" id="name" placeholder="Name" />
+      <input type="text" id="password" placeholder="Password" />
+      <input type="submit" value="Submit" />
+    </form>
+    <script src="https://unpkg.com/bcryptjs@2.4.3/dist/bcrypt.min.js" ></script>
+    <script type="text/javascript">
+
+      var bcrypt = dcodeIO.bcrypt;
+      const form = document.getElementById("login-form");
+      form.addEventListener("submit", loginAdmin);
+
+      async function loginAdmin(event) {
+        event.preventDefault();
+        const name = document.getElementById("name").value;
+        const pass = document.getElementById("password").value;
+        const password = await bcrypt.hashSync(pass, 10);
+
+        const result = await fetch("/admin/login", {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify({
+            name,
+            password,
+          }),
+        }).then((res) => {
+          res.json();
+        });
+      }
+    </script>
+  </body>
+</html>
