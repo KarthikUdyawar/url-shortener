@@ -1,8 +1,8 @@
 import { Router } from "express";
-import DeleteShortUrlById from "../controllers/DeleteShortUrlById.controller";
-import FetchShortUrlsById from "../controllers/FetchShortUrlById.controller";
-import FetchShortUrlsAll from "../controllers/FetchShortUrlsAll.controllers";
-import UpdateShortUrlsById from "../controllers/UpdateShortUrlById.controller";
+import DeleteShortUrlById from "../controllers/Admin/DeleteShortUrlById.controller";
+import FetchShortUrlsById from "../controllers/Admin/FetchShortUrlById.controller";
+import FetchShortUrlsAll from "../controllers/Admin/FetchShortUrlsAll.controllers";
+import UpdateShortUrlsById from "../controllers/Admin/UpdateShortUrlById.controller";
 
 const AdminRoutes: Router = Router();
 

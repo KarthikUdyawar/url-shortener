@@ -1,12 +1,12 @@
-import { ShortUrls } from "../models/shortURL.model";
+import { ShortUrls } from "../../models/shortURL.model";
 import { Request, Response } from "express";
-import ErrorHandler from "../middleware/Handler/ErrorHandler";
-import HttpException from "../middleware/Exceptions/HttpException";
-import IMessage from "./interfaces/IMessage";
-import IResponse from "./interfaces/IResponse";
-import IShortUrl from "../models/interfaces/IShortUrl";
-import GetRequestProtocol from "../utils/GetRequestProtocol";
-import config from "../../config/env";
+import ErrorHandler from "../../middleware/Handler/ErrorHandler";
+import HttpException from "../../middleware/Exceptions/HttpException";
+import IMessage from "../interfaces/IMessage";
+import IResponse from "../interfaces/IResponse";
+import IShortUrl from "../../models/interfaces/IShortUrl";
+import GetRequestProtocol from "../../utils/GetRequestProtocol";
+import config from "../../../config/env";
 
 const FetchShortUrlsAll = async (req: Request, res: Response) => {
   const msg: IMessage = { isSuccessful: false, message: "", info: null };

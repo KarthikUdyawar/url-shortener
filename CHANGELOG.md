@@ -9,6 +9,14 @@ and this project adheres to [Semantic Versioning](http://semver.org/).
 
 Here we write upgrading notes for brands. It's a team effort to make them as straightforward as possible.
 
+## [1.2.2] - 2022-06-30
+
+### Changed
+
+- Create new folder called Admin.
+- Put all admin controllers in this file
+- Required changes to Admin.routes
+
 ## [1.2.1] - 2022-06-30
 
 ### Added
