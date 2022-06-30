@@ -1,20 +1,24 @@
 import { Router } from "express";
 import AdminLogin from "../controllers/Admin/login.controller";
+import AdminLogout from "../controllers/Admin/logout.controller";
 import DeleteShortUrlById from "../controllers/Admin/DeleteShortUrlById.controller";
 import FetchShortUrlsById from "../controllers/Admin/FetchShortUrlById.controller";
 import FetchShortUrlsAll from "../controllers/Admin/FetchShortUrlsAll.controllers";
 import UpdateShortUrlsById from "../controllers/Admin/UpdateShortUrlById.controller";
 
-const AdminRoutes: Router = Router();
+const AdminRoutesProtective: Router = Router();
 const AdminRoutesUnProtective: Router = Router();
 
-AdminRoutes.get("/all", FetchShortUrlsAll);
 AdminRoutesUnProtective.post("/login", AdminLogin);
 
-AdminRoutes.get("/url/:id", FetchShortUrlsById);
+AdminRoutesProtective.put("/logout", AdminLogout);
 
-AdminRoutes.delete("/delete/:id", DeleteShortUrlById);
+AdminRoutesProtective.get("/all", FetchShortUrlsAll);
 
-AdminRoutes.put("/update/:id", UpdateShortUrlsById);
+AdminRoutesProtective.get("/url/:id", FetchShortUrlsById);
 
-export { AdminRoutesUnProtective };
+AdminRoutesProtective.delete("/delete/:id", DeleteShortUrlById);
+
+AdminRoutesProtective.put("/update/:id", UpdateShortUrlsById);
+
+export { AdminRoutesProtective, AdminRoutesUnProtective };

@@ -5,7 +5,7 @@ import http from "http";
 import { Headers } from "./api/middleware/Headers";
 import Logger from "./api/middleware/Logger";
 import ShortUrlRoutes from "./api/routes/ShortURL.routes";
-import AdminRoutes from "./api/routes/Admin.routes";
+import { AdminRoutesProtective, AdminRoutesUnProtective } from "./api/routes/Admin.routes";
 import HelperRoutes from "./api/routes/Helper.routes";
 
 // Boot express
@@ -37,5 +37,6 @@ Promise.resolve(new Database().conn())
   });
 
 app.use("/", ShortUrlRoutes);
-app.use("/admin", AdminRoutes);
 app.use("/helper", HelperRoutes);
+app.use("/admin", AdminRoutesUnProtective);
+app.use("/admin", VerificationHandler, AdminRoutesProtective);
